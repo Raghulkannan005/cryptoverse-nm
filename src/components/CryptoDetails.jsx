@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import HTMLReactParser from "html-react-parser";
 import { useParams } from "react-router-dom";
 import millify from "millify";
@@ -153,11 +153,11 @@ const CryptoDetails = () => {
           {stats.map(({ icon, title, value }) => {
             return (
               <Col key={uuidv4()} className="coin-stats">
-                <Col className="coin-stats-name">
-                  <Text>{icon}</Text>
-                  <Text>{title}</Text>
-                </Col>
-                <Text className="stats">{value}</Text>
+              <Col className="coin-stats-name">
+                <Text style={{ color: "#b9ddff" }}>{icon}</Text>
+                <Text style={{ color: "#b9ddff" }}>{title}</Text>
+              </Col>
+              <Text className="stats">{value}</Text>
               </Col>
             );
           })}
@@ -173,8 +173,8 @@ const CryptoDetails = () => {
             return (
               <Col key={uuidv4()} className="coin-stats">
                 <Col className="coin-stats-name">
-                  <Text>{icon}</Text>
-                  <Text>{title}</Text>
+                  <Text style={{ color: "#b9ddff" }}>{icon}</Text>
+                  <Text style={{ color: "#b9ddff" }}>{title}</Text>
                 </Col>
                 <Text className="stats">{value}</Text>
               </Col>
@@ -196,10 +196,10 @@ const CryptoDetails = () => {
           {cryptoDetails?.links.map((link) => {
             return (
               <Row className="coin-link" key={uuidv4()}>
-                <Title level={5} className="link-name">
+                <Title level={5} style={{ color: "#b9ddff" }} className="link-name">
                   {link.type}
                 </Title>
-                <a href={link.url} target="_blank" rel="noreferrer">
+                <a href={link.url} style={{ color: "#ffffff" }} target="_blank" rel="noreferrer">
                   {link.name}
                 </a>
               </Row>

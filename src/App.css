@@ -24,11 +24,11 @@
 
 a {
   text-decoration: none;
-  color: var(--primary-light);
+  color: var(--text-primary);
 }
 
 a:hover {
-  color: var(--primary) !important;
+  color: var(--text-primary) !important;
   transition: color 0.3s ease;
 }
 
@@ -281,7 +281,7 @@ body {
 }
 
 .ant-statistic-title {
-  color: var(--text-muted) !important;
+  color: var(--text-primary) !important;
   font-size: 14px !important;
   margin-bottom: 8px !important;
 }
@@ -341,7 +341,7 @@ body {
 
 .price-change {
   font-weight: 600 !important;
-  color: var (--text-primary) !important;
+  color: var(--text-primary) !important;
 }
 
 .current-price {
@@ -414,21 +414,25 @@ body {
   font-size: 1rem;
   opacity: 0.9;
   padding: 20px;
+  color: var(--text-primary);
 }
 
 .coin-stats-name {
   display: flex;
   gap: 10px;
   font-size: 1rem;
+  color: var(--text-primary);
 }
 
 .stats {
   font-weight: 800;
+  color: var(--text-primary);
 }
 
 .coin-value-statistics-heading p {
   font-size: 1rem;
   opacity: 0.9;
+  color: var(--text-primary);
 }
 
 .coin-desc-link {
@@ -437,6 +441,7 @@ body {
   margin-top: 40px;
   padding-top: 20px;
 }
+
 
 .coin-desc-link h2 {
   font-weight: 700;
@@ -463,6 +468,7 @@ body {
 .coin-links {
   padding: 0px 20px;
   flex: 0.5;
+  color: var(--text-primary);
 }
 
 .coin-link {
@@ -470,16 +476,18 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
   padding: 20px;
 }
 
 .link-name {
   text-transform: capitalize;
   font-size: 1rem;
+  color: var(--text-primary);
 }
 
 .coin-link a {
-  color: var(--primary);
+  color: var(--text-primary);
   font-weight: 700;
   font-size: 1rem;
 }
